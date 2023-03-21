@@ -92,10 +92,6 @@ class DiaryEntry
   def count_words
     # returns the length of the entry
   end
-
-  def reading_time(wpm) # wpm is the reading speed
-    # returns time to read the entry in minutes given the wpm
-  end
 end
 
 class Contacts
@@ -197,10 +193,6 @@ entry.contents # => "one " * 200
 # count words
 entry = DiaryEntry.new("Monday", "one " * 200)
 entry.count_words # => 200
-
-# reading time
-entry = DiaryEntry.new("Monday", "one " * 200)
-entry.reading_time(200) # => 1
 
 # TodoList
 # constructs

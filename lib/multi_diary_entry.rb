@@ -1,14 +1,16 @@
 class DiaryEntry
   def initialize(title, contents) # title is a string, contents is a string
-  # @title = title
-  # @contents = contents
+  @title = title
+  @contents = contents
   end
 
   def contents
+    @contents
   # returns contents
   end
 
   def count_words
+    @contents.split.length
     # returns the length of the entry
   end
 
